@@ -1,31 +1,45 @@
-import DMJLogo from './assets/DMJLogo.svg';
-import Logo from './assets/Logo.svg';
-import OSLogo from './assets/OSLogo.svg';
 import SBDLogo from './assets/SBDLogo.svg';
 import Navbar from './Navbar';
 import DMJ from './dmj';
 import OS from './os';
+import AslabInfo from './AslabInfo';
+import FeedbackForm from './FeedbackForm';
 
-import './App.css'
+import './App.css';
 
 export default function App() {
   return (
     <div>
       <Navbar />
-        <div id='sbd' className="w-screen h-screen bg-pastelPink text-white flex flex-col justify-center items-center">
-          <div className='flex flex-col md:flex-row items-center'>
-            <img src={SBDLogo} alt="SBD Logo" className= "h-64 w-64"/>
-              <div>
-                <h1 className='text-2xl md:text-4xl font-bold text-white text-left ml-4'>NETLAB SBD</h1>
-                  <div className='bg-pastelSky rounded-lg p-4 mt-4'>  
-                    <p className='text-md md:text-xl text-white max-w-2xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                    <p className='text-md md:text-xl text-white max-w-2xl'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </div>
-              </div>
+      <section id="sbd" className="w-screen h-screen bg-gradient-pastel text-white flex flex-col justify-center items-center fade-in">
+        <div className="flex flex-col md:flex-row items-center gap-6 px-4">
+          <img src={SBDLogo} alt="SBD Logo" className="h-64 w-64 animate-pulse" />
+          <div className="text-left max-w-2xl">
+            <h1 className="text-3xl md:text-5xl font-extrabold mb-4 text-white drop-shadow-lg">NETLAB SBD</h1>
+            <div className="card-container text-white space-y-4">
+              <p className="text-md md:text-lg leading-relaxed">
+              Praktikum SBD fokus pada perancangan dan pengelolaan basis data menggunakan model relasional serta konsep join, view, query lanjutan, dan normalisasi.
+              </p>
+              <p className="text-md md:text-lg leading-relaxed">
+              Implementasi dilakukan melalui pengembangan aplikasi fullstack menggunakan Node.js, MongoDB, React.js, dan Express.
+              </p>
+            </div>
           </div>
         </div>
-        <div id='dmj'><DMJ/></div>
-        <div id='os'><OS/></div>
+      </section>
+
+      <section id="dmj" className="fade-in">
+        <DMJ />
+      </section>
+
+      <section id="os" className="fade-in">
+        <OS />
+      </section>
+      
+      <section id="aslab" className="fade-in">
+        <AslabInfo />
+      </section>
+      <FeedbackForm/>
     </div>
-  )
+  );
 }

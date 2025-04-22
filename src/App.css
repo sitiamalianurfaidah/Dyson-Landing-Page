@@ -34,3 +34,94 @@
 .read-the-docs {
   color: #888;
 }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+.card-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Animasi Transisi Halus */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Mulai dari posisi yang lebih bawah */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Menjadi posisi normal */
+  }
+}
+
+/* Pastel Gradient Backgrounds */
+.bg-gradient-dmj {
+  background: linear-gradient(135deg, #fcbad3, #ffe0ac, #c2f0fc);
+}
+
+.bg-gradient-os {
+  background: linear-gradient(135deg, #d5aaff, #ffd6ec, #b5ead7);
+}
+
+.bg-gradient-pastel {
+  background: linear-gradient(135deg, #fcd1d1, #c7ceea, #b5ead7);
+}
+
+.navbar-pretty {
+  background: linear-gradient(to right, #dcb0ff, #b2fefa);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Glass effect background */
+.bg-navbarGlass {
+  background: rgba(186, 104, 200, 0.55); /* pastel purple translucent */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Fade-down animation */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-down {
+  animation: fadeDown 0.8s ease-out;
+}
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap');
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.font-comfortaa {
+  font-family: 'Comfortaa', cursive;
+}
+
+/* Optional hover color */
+.hover\\:text-pastelYellow:hover {
+  color: #fff8d6;
+}

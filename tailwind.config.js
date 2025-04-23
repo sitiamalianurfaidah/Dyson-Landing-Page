@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        itim: ['Itim', 'cursive'],
+      },
       colors: {
         pastelPink: '#FADADD',
         pastelBlue: '#AEC6CF',
